@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="num"></div>
+    <script>
+      // const calculator ={
+      //     add: function(a,b){
+      //         return a + b;
+      //     },
+      //     subtract: function(a,b){
+      //         return a - b;
+      //     },
+      //     multiply: function(a,b){
+      //         return a * b;
+      //     },
+      //     square: function(a,b){
+      //         return a * a;
+      //     },
+      //     divide: (a,b) => {
+      //         if (b === 0) {
+      //             return "Error: Division by zero";
+      //         }
+      //         return a / b;
+      //     }
+      // }
+      // console.log(calculator.add(4,5));
+
+      // ==========================THE FAULTY CALCULATOR================================
+      // let a = prompt("Enter the first number:");
+      // let b = prompt("Enter the second number:");
+      //   let c = prompt("Enter the operator (+, -, *, /):");
+      // let check = Math.random();
+      // console.log("Randomly generated number: " + check);
+      
+      // function calculator(a, b, operator) 
+      // {
+      //   if (check > 0.1)
+      //    {
+      //      if (operator == "+") {
+      //         console.log(parseInt(a) + parseInt(b));
+      //       } 
+      //       else if (operator == "*") {
+      //         console.log(parseInt(a) * parseInt(b));
+      //       }
+      //        else if (operator == "-") {
+      //         console.log(parseInt(a) - parseInt(b));
+      //       } 
+      //       else if (operator == "/") {
+      //         console.log(parseInt(a) / parseInt(b));
+      //       } 
+      //       else {
+      //         console.log("Invalid operator");
+      //       }
+      //   }
+           
+      //   else 
+      //      {
+      //       if (operator == "+") {
+      //       console.log(parseInt(a) - parseInt(b));
+      //     }
+      //      else if (operator == "*") {
+      //       console.log(parseInt(a) / parseInt(b));
+      //     }
+      //      else if (operator == "-") {
+      //       console.log(parseInt(a) + parseInt(b));
+      //     }
+      //      else if (operator == "/") {
+      //       console.log(parseInt(a) * parseInt(b));
+      //     }
+      //     else
+      //      {
+      //         console.log("Invalid operator");
+      //     }
+         
+      //    }
+        
+      //  }
+      //  calculator(a,b,c);
+
+      // ============================type 2 faulty calculator using eval========================================= 
+      let a = prompt("Enter the first number:");
+      let b = prompt("Enter the second number:");
+      let c = prompt("Enter the operator (+, -, *, /):");
+      let check  = Math.random();
+      console.log("Randomly generated number: " + check);
+      let swap ={
+        "+":"-",
+        "-":"+",
+        "*":"/",
+        "/":"*"
+      }
+      
+        if (check > 0.1){
+          alert(`The result of ${eval(`${a} ${c} ${b}`)}`);
+        }
+         else{
+          alert(`The result of ${eval(`${a} ${swap[c]} ${b}`)}`);
+         }
+    </script>
+  </body>
+</html>
